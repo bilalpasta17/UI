@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/arrowCard"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arrow_back" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:text="Contact Us"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="46dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/img_woman1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/woman" />
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_QuickContact"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCentre"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/light_grey"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/img_restaurant"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/restaurant" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_ContactQuick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="QUICK CONTACT"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edit_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/square_shape"
+        android:hint="Name"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Card_QuickContact" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_name"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_Name"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Name"
+        app:layout_constraintStart_toStartOf="@+id/edit_Name"
+        app:layout_constraintTop_toTopOf="@+id/edit_Name"
+        app:srcCompat="@drawable/circle_white">
+
+        <ImageView
+            android:id="@+id/img_CircleName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_Name"
+            app:layout_constraintEnd_toEndOf="@+id/edit_Name"
+            app:layout_constraintStart_toStartOf="@+id/edit_Name"
+            app:layout_constraintTop_toTopOf="@+id/edit_Name"
+            app:srcCompat="@drawable/circle_white" />
+
+        <ImageView
+            android:id="@+id/img_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/woman" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edit_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/square_shape"
+        android:elevation="10dp"
+        android:hint="Email"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Name" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_email"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="76dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_Email"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Email"
+        app:layout_constraintStart_toStartOf="@+id/edit_Email"
+        app:layout_constraintTop_toTopOf="@+id/edit_Name"
+        app:srcCompat="@drawable/circle_white">
+
+        <ImageView
+            android:id="@+id/img_CircleEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_Name"
+            app:layout_constraintEnd_toEndOf="@+id/edit_Name"
+            app:layout_constraintStart_toStartOf="@+id/edit_Name"
+            app:layout_constraintTop_toTopOf="@+id/edit_Name"
+            app:srcCompat="@drawable/circle_white" />
+
+        <ImageView
+            android:id="@+id/img_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/em" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_Call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="146dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_Contact"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Contact"
+        app:layout_constraintStart_toStartOf="@+id/edit_Contact"
+        app:layout_constraintTop_toTopOf="@+id/edit_Name"
+        app:srcCompat="@drawable/circle_white">
+
+        <ImageView
+            android:id="@+id/img_CircleCall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_Name"
+            app:layout_constraintEnd_toEndOf="@+id/edit_Name"
+            app:layout_constraintStart_toStartOf="@+id/edit_Name"
+            app:layout_constraintTop_toTopOf="@+id/edit_Name"
+            app:srcCompat="@drawable/circle_white" />
+
+        <ImageView
+            android:id="@+id/img_Call"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/call" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edit_Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:background="@drawable/square_shape"
+        android:elevation="10dp"
+        android:hint="Contact"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Email" />
+
+    <EditText
+        android:id="@+id/edit_Message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="14dp"
+        android:background="@drawable/square_shape"
+        android:elevation="14dp"
+        android:gravity="top"
+        android:hint="Message"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Contact" />
+
+    <Button
+        android:id="@+id/button_ChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="250dp"
+        android:backgroundTint="@color/green_dark"
+        android:text="Choose File"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Message"
+        app:layout_constraintStart_toStartOf="@+id/edit_Message"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Message" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Message"
+        app:layout_constraintStart_toStartOf="@+id/edit_Message"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Message" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/last"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Message">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="lorem" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/greysquare" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/newspaper" />
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
